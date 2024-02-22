@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Quadrants with Images and Titles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .quadrant {
+            width: 50%;
+            height: 50%;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container {
+            max-width: 100%;
+            max-height: calc(100% - 100px); /* Adjust for the title, subtitle, and padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image {
+            max-width: 300px;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .title {
+            color: rgba(0, 0, 0, 0.5);
+            padding: 10px; /* Increased padding for better spacing */
+            text-align: center;
+            font-family: 'Alte Haas Grotesk', sans-serif; /* Specify the font */
+    
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-family: 'Alte Haas Grotesk', sans-serif; /* Specify the font */
+            font-size: 14px;
+            /* margin-top: 5px; */
+        }
+    </style>
+    <!-- Link to Alte Haas Grotesk font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alte+Haas+Grotesk&display=swap">
+</head>
+<body>
+    <div class="quadrant">
+        <div class="title"><h1>David Rumsey's Digital Collection</h1></div>
+        <div class="image-container">
+            <img src="davidrumsey.png" alt="QR Code to davidrumsey.com" class="image">
+            <div class="subtitle"><h2>davidrumsey.com</h2></div>
+        </div>
+    </div>
+    <div class="quadrant">
+        <div class="title"><h1>Stanford Libraries Online Catalog</h1></div>
+        <div class="image-container">
+            <img src="searchworks.png" alt="QR Code to Stanford Searchworks" class="image">
+            <div class="subtitle"><h2>searchworks.stanford.edu</h2></div>
+        </div>
+    </div>
+    <div class="quadrant">
+        <div class="title"><h1>Stanford Library Maps Guide</h1></div>
+        <div class="image-container">
+            <img src="mapguide.png" alt="QR Code to Stanford Library Maps Guide" class="image">
+            <div class="subtitle"><h2>guides.library.stanford.edu/mapcollections</h2></div>
+        </div>
+    </div>
+    <div class="quadrant">
+        <div class="title"><h1>David Rumsey Map Center Home</h1></div>
+        <div class="image-container">
+            <img src="drmc.png" alt="QR Code to David Rumsey Map Center home page" class="image">
+            <div class="subtitle"><h2>library.stanford.edu/rumsey</h2></div>
+        </div>
+    </div>
+</body>
+</html>
